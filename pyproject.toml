@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "pdf-lambda"
+version = "0.0.1"
+description = "Deployable code for AWS lambda for operations over PDFs."
+authors = ["Jan Soukup <jan@ssoukup.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.8"
+pikepdf = "^6.2.6"
+pdfkit = "^1.0.0"
+chalice = "^1.27.3"
+
+
+[tool.poetry.group.dev.dependencies]
+lambda-gateway = "^1.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
