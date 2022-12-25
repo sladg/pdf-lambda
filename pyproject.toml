@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pdf-lambda"
-version = "0.1.2"
+version = "0.1.3"
 description = "Deployable code for AWS lambda for operations over PDFs."
 authors = ["Jan Soukup <jan@ssoukup.com>"]
 readme = "README.md"
