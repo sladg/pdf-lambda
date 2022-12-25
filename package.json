@@ -1,0 +1,24 @@
+{
+    "name": "@sladg/pdf-lambda",
+    "version": "0.0.1",
+    "description": "Pre-compiled python lambda used for PDF processing",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/sladg/pdf-lambda"
+    },
+    "license": "MIT",
+    "author": "Jan Soukup <jan@ssoukup.com>",
+    "bin": {
+        "deploy": "./scripts/deploy.sh"
+    },
+    "files": [
+        "scripts",
+        ".chalice",
+        "app.py",
+        "Makefile"
+    ],
+    "engines": {
+        "node": ">=16.15"
+    },
+    "engineStrict": true
+}
