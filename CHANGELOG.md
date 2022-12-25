@@ -1,6 +1,11 @@
 # Changelog
 
 
+## [v0.1.5](https://github.com/sladg/pdf-lambda/compare/v0.1.4...v0.1.5)
+
+* 🐛 fix(script): fixed situation with script being executed in .bin folder instead of root [[70fa7e44bad82c0f8ba476b96acb0ff50d84b953](https://github.com/sladg/pdf-lambda/commit/70fa7e44bad82c0f8ba476b96acb0ff50d84b953))]
+
+
 ## [v0.1.4](https://github.com/sladg/pdf-lambda/compare/v0.1.3...v0.1.4)
 
 * 🐛 fix(script): echoing additional things for debugging [[b0de27568f805f309a41f3a1e97dac0571fbe35f](https://github.com/sladg/pdf-lambda/commit/b0de27568f805f309a41f3a1e97dac0571fbe35f))]
@@ -25,6 +30,7 @@
 
 ## [v0.0.1](https://github.com/sladg/pdf-lambda/compare/v0.0.1)
 
+* 🐛 fix(script): fixed situation with script being executed in .bin folder instead of root [[70fa7e44bad82c0f8ba476b96acb0ff50d84b953](https://github.com/sladg/pdf-lambda/commit/70fa7e44bad82c0f8ba476b96acb0ff50d84b953))]
 * 🐛 fix(script): echoing additional things for debugging [[b0de27568f805f309a41f3a1e97dac0571fbe35f](https://github.com/sladg/pdf-lambda/commit/b0de27568f805f309a41f3a1e97dac0571fbe35f))]
 * 🐛 fix(deployment): run poetry install before commands are executed, use package's dir [[a0bad543cd5ffafee8284e336bbe296b9cde5022](https://github.com/sladg/pdf-lambda/commit/a0bad543cd5ffafee8284e336bbe296b9cde5022))]
 * 🧹 chore(npm): updated list of npm files to be uploaded during publish [[c034465e1151620d15c32732d97cb86da4d1017d](https://github.com/sladg/pdf-lambda/commit/c034465e1151620d15c32732d97cb86da4d1017d))]
