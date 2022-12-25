@@ -6,8 +6,10 @@ Moreover, it's possible to use it for merging multiple PDFs into one.
 
 ## Usage
 
-`/pdf/merge` - merge multiple PDFs into one
+`GET /` - simple check to see options and configuration.
 
-`/pdf/convert` - convert HTML to PDF
+`POST /pdf/merge-multiple` - merge multiple PDFs into one
+
+`POST /pdf/convert-from-html` - convert HTML to PDF
 
 Make sure to set `Accept: application/pdf` in request headers.
