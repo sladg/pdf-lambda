@@ -3,16 +3,20 @@
 set -e
 echo "Deploying PDF Lambda..."
 
-echo "The script you are running has basename $(basename -- "$0"), dirname $(dirname -- "$0")"
-echo "The present working directory is $(pwd)"
-
 CURRENT_DIR=$(pwd)
+SCRIPT_DIR=$(dirname "$0")
+TOML_NAME="pyproject.toml"
 
 # Set working environment to folder of this command.
-SCRIPT_DIR=$(dirname "$0")
+# We expect the script to be located in `.bin` folder inside node_modules, we need to go into package's root.
 cd "$SCRIPT_DIR/.."
-
-echo "Running in $(pwd)"
+if [[ -f "$TOML_NAME" ]]; then
+    echo "Running in directory $(pwd)"
+else
+    echo "Current directory, incorrect, moving to package root."
+    cd "@sladg/pdf-lambda"
+    echo "Running in directory $(pwd)"
+fi
 
 # Chalice needs to be installed for deployment.
 poetry install
