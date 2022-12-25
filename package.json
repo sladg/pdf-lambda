@@ -15,7 +15,8 @@
         "scripts",
         ".chalice",
         "app.py",
-        "Makefile"
+        "pyproject.toml",
+        "poetry.lock"
     ],
     "engines": {
         "node": ">=16.15"
