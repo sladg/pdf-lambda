@@ -9,6 +9,10 @@ deploy:
 	poetry run chalice deploy --stage dev
 	rm requirements.txt
 
+install:
+	poetry install
+	npm install
+
 commit:
 	npx --package cz-emoji-conventional --package commitizen -- cz
 
