@@ -21,3 +21,9 @@ Command will output "Rest API URL" that you can use to make requests.
 `POST /pdf/convert-from-html` - convert HTML to PDF
 
 Make sure to set `Accept: application/pdf` in request headers.
+
+## Notes
+
+Does not support `var(--color)` CSS properties due to `wkhtmltopdf` limitations.
+
+Generally the CSS and HTML should be as simple as possible, it's not as powerful as Chrome or Firefox, but it's way faster and smaller, resulting in small & efficient solution.
