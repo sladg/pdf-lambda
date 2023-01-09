@@ -1,6 +1,11 @@
 # Changelog
 
 
+## [v0.2.0](https://github.com/sladg/pdf-lambda/compare/v0.1.7...v0.2.0)
+
+* 📦 ci(pipelines): improved flow of pipelines [[237a06a718f13dcf841d40a9fc36d424ad73f1a8](https://github.com/sladg/pdf-lambda/commit/237a06a718f13dcf841d40a9fc36d424ad73f1a8))]
+
+
 ## [v0.1.7](https://github.com/sladg/pdf-lambda/compare/v0.1.6...v0.1.7)
 
 * 📝 docs(readme): added note about known limitation [[6de194add9a5a629cde7323037d9a5990821064a](https://github.com/sladg/pdf-lambda/commit/6de194add9a5a629cde7323037d9a5990821064a))]
@@ -40,6 +45,7 @@
 
 ## [v0.0.1](https://github.com/sladg/pdf-lambda/compare/v0.0.1)
 
+* 📦 ci(pipelines): improved flow of pipelines [[237a06a718f13dcf841d40a9fc36d424ad73f1a8](https://github.com/sladg/pdf-lambda/commit/237a06a718f13dcf841d40a9fc36d424ad73f1a8))]
 * 📝 docs(readme): added note about known limitation [[6de194add9a5a629cde7323037d9a5990821064a](https://github.com/sladg/pdf-lambda/commit/6de194add9a5a629cde7323037d9a5990821064a))]
 * 📝 docs(readme): updated package with usage notes [[9a5303fbf54cf6d3ec9356e965d748c6f066ec91](https://github.com/sladg/pdf-lambda/commit/9a5303fbf54cf6d3ec9356e965d748c6f066ec91))]
 * 🐛 fix(script): fixed situation with script being executed in .bin folder instead of root [[70fa7e44bad82c0f8ba476b96acb0ff50d84b953](https://github.com/sladg/pdf-lambda/commit/70fa7e44bad82c0f8ba476b96acb0ff50d84b953))]
