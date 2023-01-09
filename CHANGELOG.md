@@ -1,6 +1,11 @@
 # Changelog
 
 
+## [v0.2.1](https://github.com/sladg/pdf-lambda/compare/v0.2.0...v0.2.1)
+
+* 🐛 fix(pipeline): typo fixed [[f70a7cd64019296a0c19b5f7f054e0e45232afe3](https://github.com/sladg/pdf-lambda/commit/f70a7cd64019296a0c19b5f7f054e0e45232afe3))]
+
+
 ## [v0.2.0](https://github.com/sladg/pdf-lambda/compare/v0.1.7...v0.2.0)
 
 * 📦 ci(pipelines): improved flow of pipelines [[237a06a718f13dcf841d40a9fc36d424ad73f1a8](https://github.com/sladg/pdf-lambda/commit/237a06a718f13dcf841d40a9fc36d424ad73f1a8))]
@@ -45,6 +50,7 @@
 
 ## [v0.0.1](https://github.com/sladg/pdf-lambda/compare/v0.0.1)
 
+* 🐛 fix(pipeline): typo fixed [[f70a7cd64019296a0c19b5f7f054e0e45232afe3](https://github.com/sladg/pdf-lambda/commit/f70a7cd64019296a0c19b5f7f054e0e45232afe3))]
 * 📦 ci(pipelines): improved flow of pipelines [[237a06a718f13dcf841d40a9fc36d424ad73f1a8](https://github.com/sladg/pdf-lambda/commit/237a06a718f13dcf841d40a9fc36d424ad73f1a8))]
 * 📝 docs(readme): added note about known limitation [[6de194add9a5a629cde7323037d9a5990821064a](https://github.com/sladg/pdf-lambda/commit/6de194add9a5a629cde7323037d9a5990821064a))]
 * 📝 docs(readme): updated package with usage notes [[9a5303fbf54cf6d3ec9356e965d748c6f066ec91](https://github.com/sladg/pdf-lambda/commit/9a5303fbf54cf6d3ec9356e965d748c6f066ec91))]
