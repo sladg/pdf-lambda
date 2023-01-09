@@ -1,6 +1,6 @@
 {
     "name": "@sladg/pdf-lambda",
-    "version": "0.1.7",
+    "version": "0.2.0",
     "description": "Pre-compiled python lambda used for PDF processing",
     "repository": {
         "type": "git",
