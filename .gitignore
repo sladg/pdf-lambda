@@ -1,6 +1,10 @@
-.chalice/deployed/**
-.chalice/deployments/**
-
-__pycache__/
-
+dist
+python
+build
 node_modules/**
+.vscode
+.pytest_cache/
+
+cdk.out
+
+__pycache__

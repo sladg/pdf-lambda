@@ -1,25 +1,43 @@
 {
-    "name": "@sladg/pdf-lambda",
-    "version": "0.2.1",
-    "description": "Pre-compiled python lambda used for PDF processing",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/sladg/pdf-lambda"
-    },
-    "license": "MIT",
-    "author": "Jan Soukup <jan@ssoukup.com>",
-    "bin": {
-        "deploy": "./scripts/deploy.sh"
-    },
-    "files": [
-        "scripts",
-        ".chalice",
-        "app.py",
-        "pyproject.toml",
-        "poetry.lock"
-    ],
-    "engines": {
-        "node": ">=16.15"
-    },
-    "engineStrict": true
+  "name": "@sladg/pdf-lambda",
+  "version": "0.2.1",
+  "description": "Pre-compiled python lambda used for PDF processing",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sladg/pdf-lambda"
+  },
+  "license": "MIT",
+  "author": "Jan Soukup <jan@ssoukup.com>",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "cli": "./dist/cli.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npm run build:main && npm run build:cdk && npm run build:cli",
+    "build:main": "tsup lib/index.ts --dts lib/index.ts",
+    "build:cdk": "tsup lib/cdk/app.ts --out-dir dist/cdk",
+    "build:cli": "tsup lib/cli.ts"
+  },
+  "dependencies": {
+    "@types/node": "^18.7.16"
+  },
+  "devDependencies": {
+    "commander": "^9.5.0",
+    "tsup": "^6.5.0",
+    "typescript": "^4.9.4"
+  },
+  "peerDependencies": {
+    "@aws-cdk/aws-apigatewayv2-alpha": "^2.41.0-alpha",
+    "@aws-cdk/aws-apigatewayv2-integrations-alpha": "^2.41.0-alpha",
+    "aws-cdk": "^2.41.0",
+    "aws-cdk-lib": "^2.41.0"
+  },
+  "engines": {
+    "node": ">=16.15"
+  },
+  "engineStrict": true
 }
