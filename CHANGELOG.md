@@ -1,6 +1,14 @@
 # Changelog
 
 
+## [v1.0.5](https://github.com/sladg/pdf-lambda/compare/v1.0.1...v1.0.5)
+
+* 🐛 fix(pipeline): aws profile config [[e544ed0951d7070595fcba525dca2b1499cd22cc](https://github.com/sladg/pdf-lambda/commit/e544ed0951d7070595fcba525dca2b1499cd22cc))]
+* 🐛 fix(pipeline): aws region set properly [[180159fb7535f0a67c6fe4953b99298002ac4b0a](https://github.com/sladg/pdf-lambda/commit/180159fb7535f0a67c6fe4953b99298002ac4b0a))]
+* 🐛 fix(build): build process (makefile) fixed by adding aws keys [[abe0243aa7ea8625dd595e337aaed3ec730d6836](https://github.com/sladg/pdf-lambda/commit/abe0243aa7ea8625dd595e337aaed3ec730d6836))]
+* 🐛 fix(ci): publishing to npm, raw commands [[f3089da382122413868350eb3fb75fc8099f37aa](https://github.com/sladg/pdf-lambda/commit/f3089da382122413868350eb3fb75fc8099f37aa))]
+
+
 ## [v1.0.1](https://github.com/sladg/pdf-lambda/compare/v1.0.0...v1.0.1)
 
 * 🐛 fix(ci): fix publishing to npm [[58a436f7121b9bdfe40d4673f515817ebfcd93ef](https://github.com/sladg/pdf-lambda/commit/58a436f7121b9bdfe40d4673f515817ebfcd93ef))]
@@ -61,6 +69,10 @@
 
 ## [v0.0.1](https://github.com/sladg/pdf-lambda/compare/v0.0.1)
 
+* 🐛 fix(pipeline): aws profile config [[e544ed0951d7070595fcba525dca2b1499cd22cc](https://github.com/sladg/pdf-lambda/commit/e544ed0951d7070595fcba525dca2b1499cd22cc))]
+* 🐛 fix(pipeline): aws region set properly [[180159fb7535f0a67c6fe4953b99298002ac4b0a](https://github.com/sladg/pdf-lambda/commit/180159fb7535f0a67c6fe4953b99298002ac4b0a))]
+* 🐛 fix(build): build process (makefile) fixed by adding aws keys [[abe0243aa7ea8625dd595e337aaed3ec730d6836](https://github.com/sladg/pdf-lambda/commit/abe0243aa7ea8625dd595e337aaed3ec730d6836))]
+* 🐛 fix(ci): publishing to npm, raw commands [[f3089da382122413868350eb3fb75fc8099f37aa](https://github.com/sladg/pdf-lambda/commit/f3089da382122413868350eb3fb75fc8099f37aa))]
 * 🐛 fix(ci): fix publishing to npm [[58a436f7121b9bdfe40d4673f515817ebfcd93ef](https://github.com/sladg/pdf-lambda/commit/58a436f7121b9bdfe40d4673f515817ebfcd93ef))]
 * 🧹 chore(version): updated lock file [[899dbe9c1e6aaad345f7e078ca1693a3612a3eed](https://github.com/sladg/pdf-lambda/commit/899dbe9c1e6aaad345f7e078ca1693a3612a3eed))]
 * ♻️ refactor(app): app refactoring, cdk introduced, chalice discontinued [[9e1dc2750bb1fb84f817ae77c2caea46cbe3b748](https://github.com/sladg/pdf-lambda/commit/9e1dc2750bb1fb84f817ae77c2caea46cbe3b748))]
