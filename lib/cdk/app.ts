@@ -15,7 +15,7 @@ new PdfLambdaStack(app, process.env.STACK_NAME, {
 	codeZipPath: path.resolve(__dirname, '../../dist/code.zip'),
 	vendorZipPath: path.resolve(__dirname, '../../dist/vendor-layer.zip'),
 	wkhtmltopdfZipPath: path.resolve(__dirname, '../../dist/wkhtmltopdf-layer.zip'),
-	customHandler: 'app.handler',
+	customHandler: 'pdf_lambda/handler.handler',
 	env: {
 		account: process.env.CDK_DEFAULT_ACCOUNT,
 		region: process.env.REGION ?? process.env.CDK_DEFAULT_REGION,

@@ -33,6 +33,9 @@ export const setupPdfLambda = (
 		memorySize: memory,
 		timeout: Duration.seconds(timeout),
 		layers: [vendorLayer, wkhtmlLayer],
+		environment: {
+			WKHTMLTOPDF_PATH: '/opt/bin/wkhtmltopdf',
+		},
 	})
 
 	new CfnOutput(scope, 'pdfLambdaArn', { value: pdfLambda.functionArn })

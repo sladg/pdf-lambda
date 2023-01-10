@@ -3,14 +3,10 @@ from tempfile import NamedTemporaryFile
 from base64 import b64decode
 from io import BytesIO
 import pdfkit
-import os
+from os import environ
+from flask import Flask, Response, request
 
-from chalice import Chalice, Response
-
-
-app = Chalice(app_name='PdfLambda')
-
-app.api.binary_types.append('application/pdf')
+app = Flask(__name__)
 
 
 def load_base_to_binary(base: str):
@@ -41,7 +37,9 @@ def replace_var_in_html(html: str, variables={}):
 
 def convert_to_pdf(html: str):
     output = NamedTemporaryFile()
-    config = pdfkit.configuration(wkhtmltopdf=os.environ["WKHTMLTOPDF_PATH"])
+    config = pdfkit.configuration(
+        wkhtmltopdf=environ.get("WKHTMLTOPDF_PATH", None)
+    )
     pdfkit.from_string(html, output.name, configuration=config)
     return output.read()
 
@@ -49,16 +47,6 @@ def convert_to_pdf(html: str):
 def compress_pdf(pdf: bytes):
     # @TODO: Implement later if needed.
     pass
-
-# Available attributes on app.current_request:
-#   current_request.query_params - A dict of the query params for the request.
-#   current_request.headers - A dict of the request headers.
-#   current_request.uri_params - A dict of the captured URI params.
-#   current_request.method - The HTTP method (as a string).
-#   current_request.json_body - The parsed JSON body (json.loads(raw_body))
-#   current_request.raw_body - The raw HTTP body as bytes.
-#   current_request.context - A dict of additional context information
-#   current_request.stage_vars - Configuration for the API Gateway stage
 
 
 @app.route('/', methods=['GET'])
@@ -82,39 +70,27 @@ def http_index():
     }
 
 
-@app.route('/pdf/merge-multiple', methods=['POST', 'PUT'], content_types=['application/json'])
+@app.route('/pdf/merge-multiple', methods=['POST', 'PUT'])
 # Accept JSON with base64 files inside (pdfs).
 # JSON request body: {"files": ["base64", "base64"]}
 def http_merge_pdf():
-    bases = app.current_request.json_body['files']
+    json_data = request.get_json()
+    bases = json_data['files']
 
     pdf = merge_pdf(bases)
 
-    return Response(
-        body=pdf,
-        status_code=200,
-        headers={
-            'Content-Type': 'application/pdf',
-            'Content-Disposition': 'inline; file.pdf'
-        }
-    )
+    return Response(pdf, mimetype='application/pdf')
 
 
-@app.route('/pdf/convert-from-html', methods=['POST', 'PUT'], content_types=['application/json'])
+@app.route('/pdf/convert-from-html', methods=['POST', 'PUT'])
 # Accept JSON with html and variables.
 # JSON request body: {"template": "<div>{{name}}</div>", "variables": {"name": "aha"}
 def http_convert_pdf():
-    html = app.current_request.json_body['template']
-    variables = app.current_request.json_body['variables']
+    json_data = request.get_json()
+    html = json_data['template']
+    variables = json_data['variables']
 
     html = replace_var_in_html(html, variables)
     pdf = convert_to_pdf(html)
 
-    return Response(
-        body=pdf,
-        status_code=200,
-        headers={
-            'Content-Type': 'application/pdf',
-            'Content-Disposition': 'inline; file.pdf'
-        }
-    )
+    return Response(pdf, mimetype='application/pdf')

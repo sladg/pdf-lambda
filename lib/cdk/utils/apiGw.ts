@@ -8,9 +8,10 @@ export interface SetupApiGwProps {
 }
 
 export const setupApiGateway = (scope: Stack, { pdfLambda }: SetupApiGwProps) => {
-	const apiGateway = new HttpApi(scope, 'ServerProxy')
-
-	apiGateway.addRoutes({ path: '/{proxy+}', integration: new HttpLambdaIntegration('LambdaApigwIntegration', pdfLambda) })
+	const apiGateway = new HttpApi(scope, `ServerProxy`, {
+		apiName: `${scope.stackName}_proxy`,
+		defaultIntegration: new HttpLambdaIntegration('LambdaApigwIntegration', pdfLambda),
+	})
 
 	new CfnOutput(scope, 'apiGwUrlUrl', { value: apiGateway.apiEndpoint })
 

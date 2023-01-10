@@ -40,7 +40,7 @@ package-code:
 	zip -q -r $(BUILD_FOLDER)/code.zip $(LAMBDA_FOLDER)/*
 
 start:
-	poetry run python $(LAMBDA_FOLDER)/handler.py
+	poetry run flask --app $(LAMBDA_FOLDER)/app run
 
 test:
 	poetry run pytest
