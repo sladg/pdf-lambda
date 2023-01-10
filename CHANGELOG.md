@@ -1,6 +1,11 @@
 # Changelog
 
 
+## [v1.1.0](https://github.com/sladg/pdf-lambda/compare/v1.0.7...v1.1.0)
+
+* ✨ feat(flask): re-implemented wsgi, correct routes handling, chalice removed completely, flask added [[ae01faa52a89008f44ee51561f837227ac603574](https://github.com/sladg/pdf-lambda/commit/ae01faa52a89008f44ee51561f837227ac603574))]
+
+
 ## [v1.0.7](https://github.com/sladg/pdf-lambda/compare/v1.0.6...v1.0.7)
 
 * 🐛 fix(cdk): duplicate naming fixed [[25939211a5ec3193298b4a999acc544fa11490a8](https://github.com/sladg/pdf-lambda/commit/25939211a5ec3193298b4a999acc544fa11490a8))]
@@ -79,6 +84,7 @@
 
 ## [v0.0.1](https://github.com/sladg/pdf-lambda/compare/v0.0.1)
 
+* ✨ feat(flask): re-implemented wsgi, correct routes handling, chalice removed completely, flask added [[ae01faa52a89008f44ee51561f837227ac603574](https://github.com/sladg/pdf-lambda/commit/ae01faa52a89008f44ee51561f837227ac603574))]
 * 🐛 fix(cdk): duplicate naming fixed [[25939211a5ec3193298b4a999acc544fa11490a8](https://github.com/sladg/pdf-lambda/commit/25939211a5ec3193298b4a999acc544fa11490a8))]
 * 🐛 fix(ci): publishing, npm registry set [[9fc4672e5e10eab361a3ff87e2265f755d3825ab](https://github.com/sladg/pdf-lambda/commit/9fc4672e5e10eab361a3ff87e2265f755d3825ab))]
 * 🐛 fix(pipeline): aws profile config [[e544ed0951d7070595fcba525dca2b1499cd22cc](https://github.com/sladg/pdf-lambda/commit/e544ed0951d7070595fcba525dca2b1499cd22cc))]
