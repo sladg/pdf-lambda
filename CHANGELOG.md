@@ -1,6 +1,11 @@
 # Changelog
 
 
+## [v1.0.7](https://github.com/sladg/pdf-lambda/compare/v1.0.6...v1.0.7)
+
+* 🐛 fix(cdk): duplicate naming fixed [[25939211a5ec3193298b4a999acc544fa11490a8](https://github.com/sladg/pdf-lambda/commit/25939211a5ec3193298b4a999acc544fa11490a8))]
+
+
 ## [v1.0.6](https://github.com/sladg/pdf-lambda/compare/v1.0.5...v1.0.6)
 
 * 🐛 fix(ci): publishing, npm registry set [[9fc4672e5e10eab361a3ff87e2265f755d3825ab](https://github.com/sladg/pdf-lambda/commit/9fc4672e5e10eab361a3ff87e2265f755d3825ab))]
@@ -74,6 +79,7 @@
 
 ## [v0.0.1](https://github.com/sladg/pdf-lambda/compare/v0.0.1)
 
+* 🐛 fix(cdk): duplicate naming fixed [[25939211a5ec3193298b4a999acc544fa11490a8](https://github.com/sladg/pdf-lambda/commit/25939211a5ec3193298b4a999acc544fa11490a8))]
 * 🐛 fix(ci): publishing, npm registry set [[9fc4672e5e10eab361a3ff87e2265f755d3825ab](https://github.com/sladg/pdf-lambda/commit/9fc4672e5e10eab361a3ff87e2265f755d3825ab))]
 * 🐛 fix(pipeline): aws profile config [[e544ed0951d7070595fcba525dca2b1499cd22cc](https://github.com/sladg/pdf-lambda/commit/e544ed0951d7070595fcba525dca2b1499cd22cc))]
 * 🐛 fix(pipeline): aws region set properly [[180159fb7535f0a67c6fe4953b99298002ac4b0a](https://github.com/sladg/pdf-lambda/commit/180159fb7535f0a67c6fe4953b99298002ac4b0a))]
