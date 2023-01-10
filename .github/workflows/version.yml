@@ -30,11 +30,13 @@ jobs:
           cache: 'npm'
       - name: Install Poetry & NPM dependencies
         run: make install
+      - name: Prepare for publish
+        run: make package
       - name: Release
         run: make release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - uses: mikeal/merge-release@master
+      - name: NPM publish
+        run: npm publish --access public
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
