@@ -1,6 +1,11 @@
 # Changelog
 
 
+## [v1.0.6](https://github.com/sladg/pdf-lambda/compare/v1.0.5...v1.0.6)
+
+* 🐛 fix(ci): publishing, npm registry set [[9fc4672e5e10eab361a3ff87e2265f755d3825ab](https://github.com/sladg/pdf-lambda/commit/9fc4672e5e10eab361a3ff87e2265f755d3825ab))]
+
+
 ## [v1.0.5](https://github.com/sladg/pdf-lambda/compare/v1.0.1...v1.0.5)
 
 * 🐛 fix(pipeline): aws profile config [[e544ed0951d7070595fcba525dca2b1499cd22cc](https://github.com/sladg/pdf-lambda/commit/e544ed0951d7070595fcba525dca2b1499cd22cc))]
@@ -69,6 +74,7 @@
 
 ## [v0.0.1](https://github.com/sladg/pdf-lambda/compare/v0.0.1)
 
+* 🐛 fix(ci): publishing, npm registry set [[9fc4672e5e10eab361a3ff87e2265f755d3825ab](https://github.com/sladg/pdf-lambda/commit/9fc4672e5e10eab361a3ff87e2265f755d3825ab))]
 * 🐛 fix(pipeline): aws profile config [[e544ed0951d7070595fcba525dca2b1499cd22cc](https://github.com/sladg/pdf-lambda/commit/e544ed0951d7070595fcba525dca2b1499cd22cc))]
 * 🐛 fix(pipeline): aws region set properly [[180159fb7535f0a67c6fe4953b99298002ac4b0a](https://github.com/sladg/pdf-lambda/commit/180159fb7535f0a67c6fe4953b99298002ac4b0a))]
 * 🐛 fix(build): build process (makefile) fixed by adding aws keys [[abe0243aa7ea8625dd595e337aaed3ec730d6836](https://github.com/sladg/pdf-lambda/commit/abe0243aa7ea8625dd595e337aaed3ec730d6836))]
