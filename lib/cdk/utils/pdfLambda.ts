@@ -25,7 +25,7 @@ export const setupPdfLambda = (
 		code: Code.fromAsset(vendorZipPath),
 	})
 
-	const imageLambda = new Function(scope, 'VendorLayer', {
+	const pdfLambda = new Function(scope, 'PdfLambda', {
 		code: Code.fromAsset(codePath),
 		// @NOTE: Make sure to keep python3.8 as binaries seems to be messed for other versions.
 		runtime: Runtime.PYTHON_3_8,
@@ -35,7 +35,7 @@ export const setupPdfLambda = (
 		layers: [vendorLayer, wkhtmlLayer],
 	})
 
-	new CfnOutput(scope, 'imageLambdaArn', { value: imageLambda.functionArn })
+	new CfnOutput(scope, 'pdfLambdaArn', { value: pdfLambda.functionArn })
 
-	return imageLambda
+	return pdfLambda
 }

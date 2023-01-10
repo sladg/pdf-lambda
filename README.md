@@ -6,9 +6,9 @@ Moreover, it's possible to use it for merging multiple PDFs into one.
 
 ## Usage
 
-```
-npx --package @sladg/pdf-lambda deploy
-```
+Very simple and straight forward `npx --package @sladg/pdf-lambda cli deploy`. Pass `--help` in the end for all options and configuration.
+
+In case you want to clean it up, use `npx --package @sladg/pdf-lambda cli remove`.
 
 Command will output "Rest API URL" that you can use to make requests.
 

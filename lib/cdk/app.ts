@@ -9,8 +9,6 @@ if (!process.env.STACK_NAME) {
 	throw new Error('Name of CDK stack was not specified!')
 }
 
-const commandCwd = process.cwd()
-
 new PdfLambdaStack(app, process.env.STACK_NAME, {
 	lambdaTimeout: process.env.LAMBDA_TIMEOUT ? Number(process.env.LAMBDA_TIMEOUT) : DEFAULT_TIMEOUT,
 	lambdaMemory: process.env.LAMBDA_MEMORY ? Number(process.env.LAMBDA_MEMORY) : DEFAULT_MEMORY,
