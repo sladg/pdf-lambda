@@ -1,6 +1,11 @@
 # Changelog
 
 
+## [v1.0.1](https://github.com/sladg/pdf-lambda/compare/v1.0.0...v1.0.1)
+
+* 🐛 fix(ci): fix publishing to npm [[58a436f7121b9bdfe40d4673f515817ebfcd93ef](https://github.com/sladg/pdf-lambda/commit/58a436f7121b9bdfe40d4673f515817ebfcd93ef))]
+
+
 ## [v1.0.0](https://github.com/sladg/pdf-lambda/compare/v0.2.1...v1.0.0)
 
 * 🧹 chore(version): updated lock file [[899dbe9c1e6aaad345f7e078ca1693a3612a3eed](https://github.com/sladg/pdf-lambda/commit/899dbe9c1e6aaad345f7e078ca1693a3612a3eed))]
@@ -56,6 +61,7 @@
 
 ## [v0.0.1](https://github.com/sladg/pdf-lambda/compare/v0.0.1)
 
+* 🐛 fix(ci): fix publishing to npm [[58a436f7121b9bdfe40d4673f515817ebfcd93ef](https://github.com/sladg/pdf-lambda/commit/58a436f7121b9bdfe40d4673f515817ebfcd93ef))]
 * 🧹 chore(version): updated lock file [[899dbe9c1e6aaad345f7e078ca1693a3612a3eed](https://github.com/sladg/pdf-lambda/commit/899dbe9c1e6aaad345f7e078ca1693a3612a3eed))]
 * ♻️ refactor(app): app refactoring, cdk introduced, chalice discontinued [[9e1dc2750bb1fb84f817ae77c2caea46cbe3b748](https://github.com/sladg/pdf-lambda/commit/9e1dc2750bb1fb84f817ae77c2caea46cbe3b748))]
 * 🐛 fix(pipeline): typo fixed [[f70a7cd64019296a0c19b5f7f054e0e45232afe3](https://github.com/sladg/pdf-lambda/commit/f70a7cd64019296a0c19b5f7f054e0e45232afe3))]
